@@ -1,5 +1,6 @@
-
 import "./header.styles.css"
+import {Switch} from "@mui/material";
+
 function NavbarTab() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -15,6 +16,8 @@ function NavbarTab() {
                     <a className="nav-item nav-link" href="#">Pricing</a>
                     <a className="nav-item nav-link disabled" href="#">Disabled</a>
                 </div>
+                <Switch  className="theme" defaultChecked/>
+
             </div>
         </nav>
     );
